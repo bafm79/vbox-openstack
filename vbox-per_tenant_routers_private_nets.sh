@@ -32,7 +32,7 @@ vboxmanage clonevm ${vm_original} --mode machine --name ${vm_2} --register
 vboxmanage modifyvm ${vm_2} --memory 2048 --cpus 2 --hwvirtex on --hwvirtexexcl on
 vboxmanage modifyvm ${vm_2} --nic1 hostonly --hostonlyadapter1 vboxnet0
 vboxmanage modifyvm ${vm_2} --nic2 hostonly --hostonlyadapter2 vboxnet2
-vboxmanage modifyvm ${vm_2} --nic3 hostonly --hostonlyadapter2 vboxnet1
+vboxmanage modifyvm ${vm_2} --nic3 hostonly --hostonlyadapter3 vboxnet1
 vboxmanage modifyvm ${vm_2} --nicpromisc3 allow-all
 vboxmanage modifyvm ${vm_2} --nic4 nat
 
