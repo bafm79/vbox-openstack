@@ -16,7 +16,7 @@ vboxmanage hostonlyif create
 vboxmanage hostonlyif create
 vboxmanage hostonlyif create
 vboxmanage hostonlyif ipconfig vboxnet0 --ip 192.168.0.1 --netmask 255.255.255.0
-vboxmanage hostonlyif ipconfig vboxnet1 --ip 7.7.7.7.1 --netmask 255.255.255.0
+vboxmanage hostonlyif ipconfig vboxnet1 --ip 7.7.7.1 --netmask 255.255.255.0
 vboxmanage hostonlyif ipconfig vboxnet2 --ip 10.10.10.200 --netmask 255.255.255.0
 
 vboxmanage clonevm ${vm_original} --mode machine --name ${vm_1} --register
